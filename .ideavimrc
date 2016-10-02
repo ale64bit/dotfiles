@@ -1,0 +1,16 @@
+let mapleader = ","
+
+" scala bindings
+nmap <Leader>r :action RenameElement<CR>
+nmap <Leader>d :action GotoDeclaration<CR>
+nmap <Leader>p :action ParameterInfo<CR>
+nmap <Leader>s :action SplitVertically<CR>
+nmap <Leader>u :action UnsplitAll<CR>
+
+" tab navigation
+nmap <C-H> :action PreviousTab<CR>
+nmap <C-L> :action NextTab<CR>
+nmap <C-W> :action CloseContent<CR>
+
+" insert space in normal mode
+nnoremap <Space> i<Space><Esc>

@@ -1,7 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-filetype plugin indent on    " required
+set nocompatible              
+filetype plugin indent on 
 set timeoutlen=1000 ttimeoutlen=10
 set tabstop=2
 set shiftwidth=2
@@ -29,10 +27,11 @@ let mapleader = ","
 " commands
 nmap <Leader>q :NERDTreeToggle<CR>
 nmap <Leader>t :TagbarToggle<CR>
-nmap <Leader>r :GoRename<CR>
-nmap <Leader>d :GoDef<CR>
-nmap <Leader>p :GoDefPop<CR>
-nmap <Leader>b :GoBuild<CR>
+" golang bindings
+au FileType go nmap <Leader>r :GoRename<CR>
+au FileType go nmap <Leader>d :GoDef<CR>
+au FileType go nmap <Leader>p :GoDefPop<CR>
+au FileType go nmap <Leader>b :GoBuild<CR>
 " navigate splits
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>

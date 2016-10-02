@@ -6,6 +6,7 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # copy dotfiles
 cp .vimrc $HOME/.vimrc
+cp .ideavimrc $HOME/.ideavimrc
 cat .profile >> $HOME/.profile
 cp .tmux.conf $HOME/.tmux.conf
 
