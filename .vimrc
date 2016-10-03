@@ -14,6 +14,7 @@ let &t_AF="\e[38;5;%dm"
 execute pathogen#infect()
 " -------------------------------------------------------
 
+syntax on
 colorscheme molokai
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
