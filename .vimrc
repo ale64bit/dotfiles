@@ -14,6 +14,7 @@ let &t_AF="\e[38;5;%dm"
 execute pathogen#infect()
 " -------------------------------------------------------
 
+syntax on
 colorscheme molokai
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
@@ -25,8 +26,8 @@ hi MatchParen cterm=bold ctermbg=none ctermfg=white
 " -------------------------------------------------
 let mapleader = ","
 " commands
-nmap <Leader>q :NERDTreeToggle<CR>
-nmap <Leader>t :TagbarToggle<CR>
+nmap <F2> :NERDTreeToggle<CR>
+nmap <F10> :TagbarToggle<CR>
 " golang bindings
 au FileType go nmap <Leader>r :GoRename<CR>
 au FileType go nmap <Leader>d :GoDef<CR>
@@ -38,7 +39,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 " navigate buffers
-" TODO
+nnoremap <Leader>c :bp\|bd #<CR>
+nnoremap <Leader>h :bp<CR>
+nnoremap <Leader>l :bn<CR>
 " navigate tabs
 " TODO
 " insert space in normal mode
